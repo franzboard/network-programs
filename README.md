@@ -1,2 +1,3 @@
 # network-programs
-Network server/client
+Network server/client programming
+
