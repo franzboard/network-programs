@@ -9,15 +9,15 @@ Simple port scanner
 ### connect-http.c
 Connect http Server and print response on console
 
-### Server:
+## Server:
 
-## mirror-server.c
+### mirror-server.c
 Send character string from client back in reverse order
 
-## mirror-server-threaded.c
+### mirror-server-threaded.c
 Send character string from client back in reverse order
 
-## http-server.c
+### http-server.c
 Simple http server 
 
 
