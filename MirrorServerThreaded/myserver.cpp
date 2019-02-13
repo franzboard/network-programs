@@ -4,10 +4,6 @@
 MyServer::MyServer(QObject *parent) :
     QTcpServer(parent)
 {
-}
-
-void MyServer::startServer()
-{
     int port = 5000;
 
     if(!this->listen(QHostAddress::Any,port))
