@@ -1,5 +1,5 @@
 # network-programs
-Network server/client programming
+Network server/client programming examples
 
 ## Clients:
 
@@ -20,4 +20,9 @@ Send character string from client back in reverse order
 ### http-server.c
 Simple http server 
 
+## Qt Versions in subdirectories:
+
+- MirrorServer: Console application
+- MirrorServerThreaded: Console application
+- MyTcpClient: QWidget application (GUI)
 
