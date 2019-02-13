@@ -21,6 +21,8 @@ Send character string from client back in reverse order
 Simple http server 
 
 ## Qt Versions in subdirectories:
+Install Qt development environment:
+sudo apt install qtcreator qt5-default
 
 - MirrorServer: Console application
 - MirrorServerThreaded: Console application
