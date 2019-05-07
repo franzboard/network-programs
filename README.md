@@ -14,6 +14,9 @@ Connect http Server and print response on console
 ### mirror-server.c
 Send character string from client back in reverse order
 
+### thread-example.c
+Simple Posix Threads example
+
 ### mirror-server-threaded.c
 Send character string from client back in reverse order
 

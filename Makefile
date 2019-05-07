@@ -10,6 +10,9 @@ mirror-server: mirror-server.c
 mirror-server-threaded: mirror-server-threaded.c
 	gcc mirror-server-threaded.c -Wall -o mirror-server-threaded  -l pthread
 
+thread-example: thread-example.c
+	gcc thread-example.c -o thread-example -lpthread -Wall
+
 http-server: http-server.c
 	gcc http-server.c -Wall -o http-server 
 
