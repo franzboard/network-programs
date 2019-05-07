@@ -17,5 +17,5 @@ http-server: http-server.c
 	gcc http-server.c -Wall -o http-server 
 
 clean:
-	-rm *.o connect connect-http mirror-server mirror-server-threaded http-server
+	-rm *.o connect connect-http mirror-server mirror-server-threaded http-server thread-example
 
