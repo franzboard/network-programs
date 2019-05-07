@@ -1,7 +1,7 @@
 /* Simple server listening on port 5000 - threaded version */
 /* connect with telnet or nc, send string */
 /* Server answers with string with characters in reverse order */
-/* build with -lpthread */
+/* build with gcc mirror-server-threaded.c -o mirror-server-threaded -lpthread -Wall */
 
 #include <sys/socket.h>
 #include <stdio.h>
@@ -10,6 +10,7 @@
 #include <pthread.h>
 
 #define BUFSIZE 1000
+#define PORT 5000
 
 void* mirror(void* arg)
 {
@@ -32,12 +33,10 @@ int main()
     unsigned int len;
     struct sockaddr_in serverinfo, clientinfo;
 
-    unsigned short int port = 5000;
-
     server_socket = socket(AF_INET, SOCK_STREAM, 0);
     serverinfo.sin_family = AF_INET;
     serverinfo.sin_addr.s_addr = htonl(INADDR_ANY);
-    serverinfo.sin_port = htons(port);
+    serverinfo.sin_port = htons(PORT);
 
     if (bind(server_socket, (struct sockaddr *)&serverinfo, sizeof(serverinfo)) != 0) {
         perror("Error ");
